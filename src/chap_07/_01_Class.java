@@ -7,7 +7,8 @@ public class _01_Class { // 클래스 선언
     // 필드와 메소드를 합쳐 클래스의 멤버라고 한다.
     private String modelName; // 필드
     private int modelYear; // 필드
-    private String color = "파란색";
+    // color라는 속성값이 변경되지 않길 원한다면 final키워드를 통해 수정 불가한 상태로 생성할 수 있다.
+    final private String color = "파란색";
     _01_Class(String modelName, int modelYear) { // 생성자
         // 생성자는 반환값이 없지만, void로 선언하지는 않는다.
         // 생성자는 초기화를 위한 데이터를 인수로 전달받을 수 있다.
@@ -30,6 +31,11 @@ public class _01_Class { // 클래스 선언
         _01_Class myCar = new _01_Class("아반떼", 12);
         // 메소드 실행
         System.out.println(myCar.getModel());
+        // 속성값 출력
+        System.out.println(myCar.color);
+        // 속성값 변경
+//        myCar.color = "노란색";
+//        System.out.println(myCar.color);
     }
 }
 
