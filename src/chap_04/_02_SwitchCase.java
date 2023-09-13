@@ -16,7 +16,7 @@ public class _02_SwitchCase {
                 System.out.println("반액 장학금");
                 break;
             default:
-                System.out.println("대상아님");
+                System.out.println("대상아님"); // 위 케이스들에서 아무 케이스에도 걸리지 않을 때 실행된다.
         }
         System.out.println("조회완료");
     }
